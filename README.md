@@ -7,7 +7,7 @@ This script is configured to work on Heroku by default, using [this build-pack](
 
 ## Getting Started
 
-The easiest would be to download the file here.
+The easiest would be to download the file [here](https://github.com/kohlikohl/pub-lunch/archive/master.zip).
 Place it into the root directory of your dart app and add following to your `Procfile` if you run your dart app on Heroku
 
 ```
