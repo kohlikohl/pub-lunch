@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# if no build number is set, download latest
+if [ -z "$DART_BINARY" ]; then
+    DART_BINARY="./dart-sdk/bin"
+fi
+
+# if no build number is set, download latest
+if [ -z "$MAIN_FILE" ]; then
+    MAIN_FILE="main"
+fi
+
+echo "-----> Installing packages through pub"
+$DART_BINARY/pub update
+
+echo "-----> Starting Dart-Server"
+$DART_BINARY/dart $MAIN_FILE.dart
